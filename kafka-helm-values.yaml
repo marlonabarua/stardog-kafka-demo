@@ -1,0 +1,10 @@
+serviceAccount.create: true
+externalAccess:
+  enabled: true
+  autoDiscovery:
+    enabled: true
+  service:
+    type: LoadBalancer
+    port: 9094
+    annotations:
+      service.beta.kubernetes.io/azure-dns-label-name: testlabkafka
